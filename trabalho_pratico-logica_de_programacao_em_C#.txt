@@ -1,0 +1,55 @@
+Instruções para Realização do Trabalho:
+
+Composição do Grupo:
+
+	• O trabalho deverá ser realizado em grupos de exatamente 3 alunos.
+	• Cada grupo será responsável por um único repositório.
+
+Prazo de Entrega:
+
+	• O trabalho deverá ser entregue até o dia 02/05 às 23h59.
+
+Exercícios a serem resolvidos:
+
+	• Com base na lista de 10 exercícios disponibilizada anteriormente, o grupo deverá: Resolver todas as questões utilizando exclusivamente a linguagem C#.
+
+Repositório:
+
+As resoluções deverão ser postadas em um repositório GitHub, contendo:
+	• Os arquivos com as soluções dos exercícios (extensão .cs).
+	• Um arquivo README.md com:
+		• Nome completo dos integrantes do grupo.
+		• Enumeração das questões resolvidas.
+	• Breve descrição funcional de cada exercício.
+
+Documentação Detalhada de Dois Exercícios:
+
+	• O grupo deverá selecionar 2 exercícios e produzir uma explicação detalhada, abordando:
+		• O passo a passo lógico para a resolução.
+		• As estruturas e comandos utilizados.
+		•Justificativas claras que possibilitem a compreensão do método adotado por qualquer leitor.
+Envio:
+
+	• O link do repositório deverá ser enviado por e-mail para: tpedra@up.edu.br
+	• O assunto do e-mail deverá seguir o padrão: SEXTA_NOMEDADUPLA_ADS.
+		Exemplo: SEXTA_JOAOEMARIA_ADS.
+	• No corpo do e-mail, deverão constar:
+		• Nome completo dos três integrantes do grupo.
+		• Número e título dos dois exercícios escolhidos para explicação detalhada.
+
+Critérios de Avaliação (Valor: 1,0 ponto):
+
+-----------------------------------------------------------
+Critério | Peso
+Resolução correta e funcional dos 10 exercícios | 0,4
+Organização do repositório e clareza nos arquivos | 0,2
+Qualidade e profundidade das explicações documentadas | 0,3
+Entrega dentro do prazo estabelecido | 0,1
+-----------------------------------------------------------
+Observações:
+
+	• Trabalhos entregues fora do prazo ou com inconsistências de autoria terão nota zerada.
+	• A prática é avaliativa e compõe parte da nota da disciplina.
+	• O código deverá ser original, com penalidades em caso de plágio.
+
+Em caso de dúvidas, estou à disposição para esclarecimentos por e-mail
