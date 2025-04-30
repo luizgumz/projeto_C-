@@ -1,6 +1,6 @@
 # Pastas de build
-bin/
-obj/
+project_C-/bin/
+project_C-/obj/
 
 # Configurações locais de IDEs
 .vscode/
