@@ -10,6 +10,8 @@ namespace projeto_C_.exercicio2
         {
 			try
 			{
+				Console.Clear();
+				
 				Console.WriteLine("=== Exercicio 02 ===");
 				Console.WriteLine("Qual tabuada gostaria de ver ?");
 				int number = int.Parse(Console.ReadLine());
