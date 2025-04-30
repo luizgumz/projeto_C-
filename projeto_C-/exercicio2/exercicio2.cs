@@ -12,11 +12,11 @@ namespace projeto_C_.exercicio2
 			{
 				Console.WriteLine("=== Exercicio 02 ===");
 				Console.WriteLine("Qual tabuada gostaria de ver ?");
-				int num = int.Parse(Console.ReadLine());
+				int number = int.Parse(Console.ReadLine());
 
 				for (int i = 0; i <= 10; i++) 
 				{
-					Console.WriteLine($"{num} x {i} = {num * 1}");
+					Console.WriteLine($"{number} x {i} = {number * 1}");
 				}
 			} 
 			catch (FormatException)
