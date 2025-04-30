@@ -9,7 +9,7 @@ namespace projeto_C_.exercicio1
     {
         public static void Execute() 
         {
-            Console.Clear();
+            
 
             string password;
             bool passwordValidation = false;
@@ -19,12 +19,9 @@ namespace projeto_C_.exercicio1
 
             bool isNullOrEmpty = false;
 
-
-            
-
-
             while(passwordValidation == false)
             {
+                Console.Clear();
                 do
                 {
                     Console.WriteLine("=== Exercicio 01 ===");
@@ -43,15 +40,33 @@ namespace projeto_C_.exercicio1
 
                 foreach(char s in password)
                 {
-                    if(char.IsUpper(s)) isUpperCase = true;
-                    if(char.IsDigit(s)) isNumber = true;
-                    if("!@#$%¨*()+_=-|/?\\".Contains(s)) isSpecial = true; 
+                    if(char.IsUpper(s))
+                    { 
+                        isUpperCase = true;
+                        break;
+                    }
+                    if(char.IsDigit(s))
+                    {
+                        isNumber = true;
+                        break;
+                    }
+                    if("!@#$%¨*()+_=-|/?\\".Contains(s))
+                    {
+                        isSpecial = true;
+                        break;
+                    } 
                 }
+                if(!isUpperCase) Console.WriteLine("Deve conter pelo menos um caractere maiúsculo.\n");
+                if(!isNumber) Console.WriteLine("Deve conter pelo menos um número.\n");
+                if(!isSpecial) Console.WriteLine("Deve conter pelo menos um caractere especial.\n");
+                if(password.Length < 8) Console.WriteLine("Deve conter pelo menos 8 caracteres.\n");
 
-                if(password.Length >= 8 && isUpperCase && isNumber && isSpecial)
-                {
-                    passwordValidation = true;
-                }
+                //Verifica tudo
+                if(password.Length >= 8 && isUpperCase && isNumber && isSpecial) passwordValidation = true;
+
+                Console.WriteLine("\n\n\n=============================");
+                Console.WriteLine("Limpando a tela em 3 segundos!");
+                Thread.Sleep(3_000);
             }
         } 
     }
