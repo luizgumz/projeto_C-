@@ -43,30 +43,34 @@ namespace projeto_C_.exercicio1
                     if(char.IsUpper(s))
                     { 
                         isUpperCase = true;
-                        break;
+                        continue;
                     }
                     if(char.IsDigit(s))
                     {
                         isNumber = true;
-                        break;
+                        continue;
                     }
                     if("!@#$%¨*()+_=-|/?\\".Contains(s))
                     {
                         isSpecial = true;
-                        break;
+                        continue;
                     } 
                 }
+				
                 if(!isUpperCase) Console.WriteLine("Deve conter pelo menos um caractere maiúsculo.\n");
                 if(!isNumber) Console.WriteLine("Deve conter pelo menos um número.\n");
                 if(!isSpecial) Console.WriteLine("Deve conter pelo menos um caractere especial.\n");
                 if(password.Length < 8) Console.WriteLine("Deve conter pelo menos 8 caracteres.\n");
 
                 //Verifica tudo
-                if(password.Length >= 8 && isUpperCase && isNumber && isSpecial) passwordValidation = true;
-
-                Console.WriteLine("\n\n\n=============================");
-                Console.WriteLine("Limpando a tela em 3 segundos!");
-                Thread.Sleep(3_000);
+                if(password.Length >= 8 && isUpperCase && isNumber && isSpecial) {
+					passwordValidation = true;
+					Console.WriteLine("Senha validada com sucesso!");
+				} else {
+					Console.WriteLine("\n\n\n=============================");
+					Console.WriteLine("Limpando a tela em 3 segundos!");
+					Thread.Sleep(3_000);
+				}
             }
         } 
     }

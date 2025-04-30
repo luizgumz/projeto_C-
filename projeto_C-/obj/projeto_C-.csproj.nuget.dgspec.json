@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/luizsg/LuizGumz.Positivo.28.03/projeto_C-/projeto_C-/projeto_C-.csproj": {}
+    "/home/igor/profissional/up_college/luiz-gumz/projeto_C-/projeto_C-/projeto_C-.csproj": {}
   },
   "projects": {
-    "/home/luizsg/LuizGumz.Positivo.28.03/projeto_C-/projeto_C-/projeto_C-.csproj": {
+    "/home/igor/profissional/up_college/luiz-gumz/projeto_C-/projeto_C-/projeto_C-.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/luizsg/LuizGumz.Positivo.28.03/projeto_C-/projeto_C-/projeto_C-.csproj",
+        "projectUniqueName": "/home/igor/profissional/up_college/luiz-gumz/projeto_C-/projeto_C-/projeto_C-.csproj",
         "projectName": "projeto_C-",
-        "projectPath": "/home/luizsg/LuizGumz.Positivo.28.03/projeto_C-/projeto_C-/projeto_C-.csproj",
-        "packagesPath": "/home/luizsg/.nuget/packages/",
-        "outputPath": "/home/luizsg/LuizGumz.Positivo.28.03/projeto_C-/projeto_C-/obj/",
+        "projectPath": "/home/igor/profissional/up_college/luiz-gumz/projeto_C-/projeto_C-/projeto_C-.csproj",
+        "packagesPath": "/home/igor/.nuget/packages/",
+        "outputPath": "/home/igor/profissional/up_college/luiz-gumz/projeto_C-/projeto_C-/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/luizsg/.nuget/NuGet/NuGet.Config"
+          "/home/igor/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
