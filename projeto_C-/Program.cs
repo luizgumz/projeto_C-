@@ -1,13 +1,8 @@
 ﻿using projeto_C_.exercicio1;
 using projeto_C_.exercicio2;
 
-Exercicio02.Execute();
-
 while(true) {
-	try {
-		// System.Threading.Thread.Sleep(2_000);
-		Console.Clear();
-		
+	try {		
 		Console.WriteLine("Exercicios C#");
 		Console.WriteLine("1. Exercicio 01");
 		Console.WriteLine("2. Exercicio 02");
@@ -33,5 +28,12 @@ while(true) {
 	catch (FormatException)
 	{
 		Console.WriteLine("Digite uma opção válida!");
+	}
+	finally
+	{
+		Console.WriteLine("\n\n\n=============================");
+		Console.WriteLine("Limpando a tela em 3 segundos!");
+		Thread.Sleep(3_000);
+		Console.Clear();
 	}
 }

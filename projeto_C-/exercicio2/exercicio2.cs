@@ -18,8 +18,6 @@ namespace projeto_C_.exercicio2
 				{
 					Console.WriteLine($"{num} x {i} = {num * 1}");
 				}
-
-				Console.WriteLine("================");
 			} 
 			catch (FormatException)
 			{
