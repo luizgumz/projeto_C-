@@ -11,17 +11,23 @@ namespace projeto_C_.exercicio03
 				try {
 					Console.Clear();
 
+					//Receivs a number from the user
+					//Recebe um número do usuário
 					Console.WriteLine("Digite um número: ");
 					int number = int.Parse(Console.ReadLine());
 
 					bool isValidNumber = number > 0;
 
+					//Verified if is a positiv number
+					//Verifica se é um número positivo
 					if (!isValidNumber) {
 						Console.WriteLine("Você deve digitar um número positivo!");
 						Thread.Sleep(3_000);
 						continue;
 					}
 
+					//Creates variables number and fatorial
+					//Cria as variáveis número e fatorial
 					int fatorial = 1;
 					int i = number;
 
@@ -30,6 +36,8 @@ namespace projeto_C_.exercicio03
 						i--;
 					}
 
+					//Print the results
+					//Imprime os resultados
 					Console.WriteLine($"O fatorial de {number} é {fatorial}");
 					break;
 
