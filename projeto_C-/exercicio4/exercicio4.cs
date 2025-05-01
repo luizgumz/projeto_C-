@@ -14,7 +14,7 @@ namespace projeto_C_.exercicio4
                     double inputTemperature;
                 
 
-                    Console.WriteLine("=== Conversor de temperaturas === ");
+                    Console.WriteLine("=== Conversor de temperaturas ===");
                     Console.WriteLine("1. Celsius para Fahrenheit");
                     Console.WriteLine("2. Fahrenheit para Celsius");
                     Console.WriteLine("3. Sair");
