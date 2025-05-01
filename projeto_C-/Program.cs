@@ -3,7 +3,7 @@ using projeto_C_.exercicio2;
 using projeto_C_.exercicio3;
 using projeto_C_.exercicio4;
 // using projeto_C_.exercicio5;
-// using projeto_C_.exercicio6;
+using projeto_C_.exercicio6;
 // using projeto_C_.exercicio7;
 using projeto_C_.exercicio8;
 using projeto_C_.exercicio9;
@@ -39,9 +39,9 @@ while(true) {
 			case 4:
 				Exercicio04.Execute();
 				break;
-			// case 6:
-			// 	Exercicio06.Execute();
-			// 	break;
+			case 6:
+				Exercicio06.Execute();
+				break;
 			// case 7:
 			// 	Exercicio07.Execute();
 			// 	break;
@@ -65,9 +65,9 @@ while(true) {
 	}
 	finally
 	{
-		Console.WriteLine("\n\n\n=============================");
-		Console.WriteLine("Limpando a tela em 3 segundos!");
-		Thread.Sleep(3_000);
-		Console.Clear();
+		Console.WriteLine("\n=============================");
+		Console.WriteLine("Pressione ENTER para continuar!");
+		
+		Console.ReadKey();
 	}
 }
