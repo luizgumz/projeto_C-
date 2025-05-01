@@ -1,5 +1,7 @@
 ﻿using projeto_C_.exercicio1;
 using projeto_C_.exercicio2;
+//using projeto_C_.exercicio3;
+using projeto_C_.exercicio4;
 
 while(true) {
 	try {		
