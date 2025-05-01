@@ -9,8 +9,8 @@ namespace projeto_C_.exercicio01
     {
         public static void Execute() 
         {
-            
-
+            //Variáveis criadas para cada realizar cada verificação separadamente
+            //Variables created for each verification separately
             string password;
             bool passwordValidation = false;
             bool isUpperCase = false;
@@ -22,6 +22,9 @@ namespace projeto_C_.exercicio01
             while(passwordValidation == false)
             {
                 Console.Clear();
+
+                //loop's verification to make sure users does'nt write the password correcly(not sending an null or empty input)
+                //Verificação em loop para garantir que o usuário escreva o input corretamente(não enviando um input nulo ou vazio)
                 do
                 {
                     Console.WriteLine("=== Exercicio 01 ===");
@@ -38,6 +41,8 @@ namespace projeto_C_.exercicio01
                 }
                 while(isNullOrEmpty);
 
+                //Percorre o vetor de caracteres(senha) fazendo as verificações durante o processo
+                //It goes through the caracter's array(password) making checks during the process
                 foreach(char s in password)
                 {
                     if(char.IsUpper(s))
@@ -57,12 +62,15 @@ namespace projeto_C_.exercicio01
                     } 
                 }
 				
+                //Imprime o erro para o usuário do que precisa ser corrigido
+                //Print the error so the user know what's need to be corrected
                 if(!isUpperCase) Console.WriteLine("Deve conter pelo menos um caractere maiúsculo.\n");
                 if(!isNumber) Console.WriteLine("Deve conter pelo menos um número.\n");
                 if(!isSpecial) Console.WriteLine("Deve conter pelo menos um caractere especial.\n");
                 if(password.Length < 8) Console.WriteLine("Deve conter pelo menos 8 caracteres.\n");
 
-                //Verifica tudo
+                //Se todas as verificações anteriores forem verdade a muda a ValidaçãoSenha então saindo do vetor
+                //If every verification ubove are true it changes the main validation and print "success"
                 if(password.Length >= 8 && isUpperCase && isNumber && isSpecial) {
 					passwordValidation = true;
 					Console.WriteLine("Senha validada com sucesso!");
