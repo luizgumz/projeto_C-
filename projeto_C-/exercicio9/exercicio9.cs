@@ -25,7 +25,6 @@ namespace projeto_C_.exercicio9
                 Console.WriteLine("Digite um numero entre 0 e 100");
                 numero  = int.Parse(Console.ReadLine()); 
 
-
                 if(numero > numeroAleatorio){
                     Console.WriteLine("O numero " + numero + " é maior que o numero aleatorio");
                 }else if( numero == numeroAleatorio){

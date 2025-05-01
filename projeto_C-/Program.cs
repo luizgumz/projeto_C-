@@ -1,15 +1,15 @@
-﻿using projeto_C_.exercicio1;
-using projeto_C_.exercicio2;
-using projeto_C_.exercicio3;
-using projeto_C_.exercicio4;
-// using projeto_C_.exercicio5;
-using projeto_C_.exercicio6;
-using projeto_C_.exercicio7;
+using projeto_C_.exercicio01;
+using projeto_C_.exercicio02;
+using projeto_C_.exercicio03;
+using projeto_C_.exercicio04;
+// using projeto_C_.exercicio05;
+using projeto_C_.exercicio06;
+// using projeto_C_.exercicio07;
+using projeto_C_.exercicio08;
+using projeto_C_.exercicio09;
+using projeto_C_.exercicio10;
 
-// using projeto_C_.exercicio7;
-using projeto_C_.exercicio8;
-using projeto_C_.exercicio9;
-// using projeto_C_.exercicio10;
+Console.OutputEncoding = System.Text.Encoding.UTF8;
 
 while(true) {
 	try {		
@@ -53,9 +53,9 @@ while(true) {
 			case 9:
 				Exercicio09.Execute();
 				break;
-			// case 10:
-			// 	Exercicio10.Execute();
-			// 	break;
+			case 10:
+				Exercicio10.Execute();
+				break;
 			default:
 				Console.WriteLine("Digite uma opção válida!");
 				break;
