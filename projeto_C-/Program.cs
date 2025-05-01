@@ -1,6 +1,6 @@
 ﻿using projeto_C_.exercicio1;
 using projeto_C_.exercicio2;
-//using projeto_C_.exercicio3;
+using projeto_C_.exercicio3;
 using projeto_C_.exercicio4;
 
 while(true) {
@@ -28,7 +28,7 @@ while(true) {
 				Exercicio02.Execute();
 				break;
 			case 3:
-
+				Exercicio03.Execute();
 				break;
 			default:
 				Console.WriteLine("Digite uma opção válida!");
