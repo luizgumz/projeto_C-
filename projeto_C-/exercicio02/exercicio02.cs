@@ -12,10 +12,14 @@ namespace projeto_C_.exercicio02
 			{
 				Console.Clear();
 				
+				//Recebe do usuário qual número da tabuada ele gostaria de ver
+				//Receiv from user which multiplication table it would like to see
 				Console.WriteLine("=== Exercicio 02 ===");
 				Console.WriteLine("Qual tabuada gostaria de ver ?");
 				int number = int.Parse(Console.ReadLine());
 
+				//Imprime a tabuada
+				//print the multiplication table
 				for (int i = 0; i <= 10; i++) 
 				{
 					Console.WriteLine($"{number} x {i} = {number * 1}");
