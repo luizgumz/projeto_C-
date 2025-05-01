@@ -2,7 +2,7 @@ using projeto_C_.exercicio01;
 using projeto_C_.exercicio02;
 using projeto_C_.exercicio03;
 using projeto_C_.exercicio04;
-// using projeto_C_.exercicio05;
+using projeto_C_.exercicio05;
 using projeto_C_.exercicio06;
 using projeto_C_.exercicio07;
 using projeto_C_.exercicio08;
@@ -37,6 +37,9 @@ while(true) {
 				break;
 			case 3:
                 Exercicio03.Execute();
+				break;
+			case 5:
+				Exercicio05.Execute();
 				break;
 			case 4:
 				Exercicio04.Execute();
