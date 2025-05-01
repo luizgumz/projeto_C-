@@ -6,7 +6,7 @@ using projeto_C_.exercicio4;
 // using projeto_C_.exercicio6;
 // using projeto_C_.exercicio7;
 using projeto_C_.exercicio8;
-// using projeto_C_.exercicio9;
+using projeto_C_.exercicio9;
 // using projeto_C_.exercicio10;
 
 while(true) {
@@ -48,9 +48,9 @@ while(true) {
 			case 8:
 				Exercicio08.Execute();
 				break;
-			// case 9:
-			// 	Exercicio09.Execute();
-			// 	break;
+			case 9:
+				Exercicio09.Execute();
+				break;
 			// case 10:
 			// 	Exercicio10.Execute();
 			// 	break;
