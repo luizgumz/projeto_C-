@@ -34,7 +34,7 @@ while(true) {
 				Exercicio02.Execute();
 				break;
 			case 3:
-				Exercicio03.Execute();
+                Exercicio03.Execute();
 				break;
 			case 4:
 				Exercicio04.Execute();
