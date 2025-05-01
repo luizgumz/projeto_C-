@@ -2,7 +2,7 @@
 2. Tabuada Completa com Laço Solicite ao usuário um número e imprima a tabuada completa dele (de 1 a 10), utilizando um for.
 */
 
-namespace projeto_C_.exercicio2
+namespace projeto_C_.exercicio02
 {
     abstract class Exercicio02
     {

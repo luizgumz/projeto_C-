@@ -4,7 +4,7 @@ using projeto_C_.exercicio03;
 using projeto_C_.exercicio04;
 // using projeto_C_.exercicio05;
 using projeto_C_.exercicio06;
-// using projeto_C_.exercicio07;
+using projeto_C_.exercicio07;
 using projeto_C_.exercicio08;
 using projeto_C_.exercicio09;
 using projeto_C_.exercicio10;

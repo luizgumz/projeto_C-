@@ -5,7 +5,7 @@
 // • 25 a 29.9: Sobrepeso
 // • 30 ou mais: Obesidade
 
-namespace projeto_C_.exercicio8
+namespace projeto_C_.exercicio08
 {
     abstract class Exercicio08
     {

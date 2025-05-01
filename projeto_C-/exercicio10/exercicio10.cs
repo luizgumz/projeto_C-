@@ -35,7 +35,7 @@ namespace projeto_C_.exercicio10
 						ListarTarefasResolvidas(tarefasResolvidas);
 						break;
 					case 5:
-						MoverTarefaParaResolvida();
+						MoverTarefaParaResolvida(tarefasParaFazer, tarefasResolvidas);
 						break;
 					case 0:
 						Console.WriteLine("Saindo...");
@@ -114,7 +114,26 @@ namespace projeto_C_.exercicio10
 			}
 		}
 
-		private static void MoverTarefaParaResolvida() {}
+		private static void MoverTarefaParaResolvida(List<string> tarefasParaFazer, List<string> tarefasResolvidas) {
+			Console.Clear();
+
+			ListarTarefasParaFazer(tarefasParaFazer);
+			ListarTarefasResolvidas(tarefasResolvidas);
+
+			Console.WriteLine("Digite o nome da tarefa que deseja mover para resolvida: ");
+			string tarefa = Console.ReadLine();
+
+			if (tarefasParaFazer.Contains(tarefa)) {
+				tarefasParaFazer.Remove(tarefa);
+				tarefasResolvidas.Add(tarefa);
+				Console.WriteLine("Tarefa movida para resolvida com sucesso!");
+			} else {
+				Console.WriteLine("Tarefa não encontrada.");
+			}
+
+			Console.WriteLine("\nPressione ENTER para continuar...");
+			Console.ReadKey();
+		}
 	}
 
 }

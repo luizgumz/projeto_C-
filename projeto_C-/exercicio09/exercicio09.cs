@@ -4,7 +4,7 @@
 
 using System.Security.Cryptography;
 
-namespace projeto_C_.exercicio9
+namespace projeto_C_.exercicio09
 {
     abstract class Exercicio09
     {

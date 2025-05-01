@@ -1,8 +1,4 @@
-using System;
-using System.Net;
-using System.Threading;
-
-namespace projeto_C_.exercicio7
+namespace projeto_C_.exercicio07
 {
     abstract class Exercicio07
     {

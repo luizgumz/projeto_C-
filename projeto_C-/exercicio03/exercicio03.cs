@@ -1,7 +1,7 @@
 // 3. Cálculo de Fatorial com while
 // Peça ao usuário um número inteiro positivo e calcule o fatorial desse número usando
 // while.
-namespace projeto_C_.exercicio3
+namespace projeto_C_.exercicio03
 {
 	abstract class Exercicio03
 	{

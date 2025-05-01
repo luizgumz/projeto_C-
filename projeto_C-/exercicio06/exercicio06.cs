@@ -5,7 +5,7 @@
 
 using System.Runtime.ConstrainedExecution;
 
-namespace projeto_C_.exercicio6
+namespace projeto_C_.exercicio06
 {
 	abstract class Exercicio06
 	{

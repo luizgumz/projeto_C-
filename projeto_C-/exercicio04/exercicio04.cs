@@ -1,7 +1,7 @@
 using System;
 using System.Threading;
 
-namespace projeto_C_.exercicio4
+namespace projeto_C_.exercicio04
 {
     abstract class Exercicio04
     {

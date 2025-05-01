@@ -1,4 +1,4 @@
-namespace projeto_C_.exercicio6
+namespace projeto_C_.exercicio06
 {
 	class Produto
 	{
