@@ -83,6 +83,9 @@ namespace projeto_C_.exercicio10
 			} else {
 				Console.WriteLine("Tarefa não pode ser vazia.");
 			}
+
+			Console.WriteLine("\nPressione ENTER para continuar...");
+			Console.ReadKey();
 		}
 		
 		private static void ExibirTodasTarefas(List<string> tarefasParaFazer, List<string> tarefasResolvidas) {
@@ -90,9 +93,6 @@ namespace projeto_C_.exercicio10
 
 			ListarTarefasParaFazer(tarefasParaFazer);
 			ListarTarefasResolvidas(tarefasResolvidas);
-
-			Console.WriteLine("\nPressione ENTER para continuar...");
-			Console.ReadKey();
 		}
 
 		private static void ListarTarefasParaFazer(List<string> tarefasParaFazer) {
@@ -102,6 +102,9 @@ namespace projeto_C_.exercicio10
 			} else {
 				tarefasParaFazer.ForEach(Console.WriteLine);
 			}
+
+			Console.WriteLine("\nPressione ENTER para continuar...");
+			Console.ReadKey();
 		}
 
 		private static void ListarTarefasResolvidas(List<string> tarefasResolvidas) {
@@ -112,6 +115,9 @@ namespace projeto_C_.exercicio10
 			else {
 				tarefasResolvidas.ForEach(Console.WriteLine);
 			}
+
+			Console.WriteLine("\nPressione ENTER para continuar...");
+			Console.ReadKey();
 		}
 
 		private static void MoverTarefaParaResolvida(List<string> tarefasParaFazer, List<string> tarefasResolvidas) {
