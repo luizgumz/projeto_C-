@@ -7,7 +7,7 @@ namespace projeto_C_.exercicio07
             while(true)
             {
                 try{
-
+  
                     int[] numbers = new int[10];
                     ArrayStorage(numbers);
                     int sumEvenNums = SumEvenNumers(numbers);
@@ -33,6 +33,8 @@ namespace projeto_C_.exercicio07
             }
         }
 
+        //Método que valida e armazena as entradas do usuário em um vetor
+        //Method than validate and store user's inputs in an array
         private static void ArrayStorage(int[] arr)
         {
             for (int i = 0; i < arr.Length; i++)
@@ -42,7 +44,7 @@ namespace projeto_C_.exercicio07
 
                 do
                 {
-                    Console.WriteLine("=== Armazenador de listas ===");
+                    Console.WriteLine("=== Armazenador de números ===");
                     Console.WriteLine($"\nDigite {i + 1}° número: ");
                     
                     valid = int.TryParse(Console.ReadLine(), out input);
@@ -56,6 +58,8 @@ namespace projeto_C_.exercicio07
             }
         }
 
+        //Method than receive the vector's numbers and sum even numbers
+        //Método que recebe o vetor numbers e soma os números pares 
         static int SumEvenNumers(int[] arr)
         {
             int sum = 0;
