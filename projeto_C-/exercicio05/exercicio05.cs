@@ -10,28 +10,34 @@ namespace projeto_C_.exercicio05{
     {
         public static void Execute()
         {
-          //  Console.Clear();
 
+            //input
+            //entrada
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("Digite uma palavra ou frase");
             String palavra = Console.ReadLine();
 
-           string textoLimpo = palavra;
+           string textoLimpo;
 
-		   // remove acentos
+		   //It basically makes sure input comes without accents and other symbols
+           //Isso basicamente serve para que a entrada venha sem acentos ou outros símbolos
 		   textoLimpo = Regex.Replace(
-				textoLimpo.Normalize(NormalizationForm.FormD),
+				palavra.Normalize(NormalizationForm.FormD),
 				@"\p{Mn}", ""
 			);
 
-		   // remove espaços e caracteres especiais
+		   //Remove espaços e caracteres especiais
+           //Remove spaces and special caracters
            textoLimpo = Regex.Replace(textoLimpo, @"[^a-zA-Z0-9]", "").ToLower();
 		   
-
+            //The native method reverse revert the "string" caracter
+            //O método nativo reverse reverte a "string" de caracteres 
            	char[] letras = textoLimpo.ToCharArray();
 			Array.Reverse(letras);
 			string palavraInvertida = new string(letras);
 
+            //Verificates if it's a palindrom or not
+            //Verifica se é um palindromo ou não
             if(palavraInvertida == textoLimpo){
                 Console.WriteLine("É um palíndromo");
             }else
