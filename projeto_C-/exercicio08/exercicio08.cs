@@ -12,15 +12,42 @@ namespace projeto_C_.exercicio08
         public static void Execute()
         {
             Console.Clear();
-            
-            Console.WriteLine("Qual seu peso? ");
-            float peso = float.Parse(Console.ReadLine());
+            //Variáveis peso e altura
+            float weight = 0;
+            float height = 0;
+            bool isValid;
 
-            Console.WriteLine("Qual sua altura? ");
-            float altura = float.Parse(Console.ReadLine());
+            //Verifies if the input is in correct format
+            //Verifica se a entrada está no formato correto
+            do
+            {
+                Console.WriteLine("Qual seu peso? ");
+
+                isValid = float.TryParse(Console.ReadLine(), out weight);
+                    if (!isValid)
+                    {
+                        Console.WriteLine("Entrada inválida. Tente novamente.");
+                    }
+            }while(!isValid);
             
-            float IMC = peso / (altura * 2);
-            Console.WriteLine("Seu IMC é " + IMC);
+            //Verifies if the input is in correct format
+            //Verifica se a entrada está no formato correto
+            do
+            {
+                Console.WriteLine("Qual sua altura? ");
+                
+                isValid = float.TryParse(Console.ReadLine(), out height);
+                    if (!isValid)
+                    {
+                        Console.WriteLine("Entrada inválida. Tente novamente.");
+                    }
+            }while(!isValid);
+                
+            //Calculate body development index
+            //Calcula o IMC
+            float IMC = weight / (height * 2);
+            Console.WriteLine("\nSeu IMC é " + IMC);
+            
 
             if (IMC < 18.5){
                 Console.WriteLine("Abaixo do peso");
