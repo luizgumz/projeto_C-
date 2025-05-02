@@ -2,23 +2,23 @@ namespace projeto_C_.exercicio06
 {
 	class Produto
 	{
-		public string Nome { get; set; }
-		public double Preco { get; set; }
-		public int Quantidade { get; set; }
+		public string Name { get; set; }
+		public double Price { get; set; }
+		public int Quantity { get; set; }
 
-		public Produto(string nome, double preco, int quantidade)
+		public Produto(string nome, double preco, int Quantity)
 		{
-			Nome = nome;
-			Preco = preco;
-			Quantidade = quantidade;
+			Name = nome;
+			Price = preco;
+			this.Quantity = Quantity;
 		}
 
 		public string getProdutoInfo() {
-			return $"Nome: {Nome}, Preço: {Preco}, Quantidade: {Quantidade}, Valor Total: {getValorTotal()}";
+			return $"Nome: {Name}, Preço: {Price}, Quantidade: {Quantity}, Valor Total: {getValorTotal()}";
 		}
 
 		private double getValorTotal() {
-			return Preco * Quantidade;
+			return Price * Quantity;
 		}
 	}
 }

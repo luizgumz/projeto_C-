@@ -17,20 +17,22 @@ namespace projeto_C_.exercicio06
 
 			List<Produto> produtos = new List<Produto>();
 
+			//Percorre a lista Quantidade_produto e insere os requisitos conforme entrada do usuário
+			//Goes throught the list Quantity_product and insert the requirements as per user input
 			Console.WriteLine("Cadastro de Produtos");
 			for (int i = 0; i < QUANTIDADE_PRODUTO; i++) {
 				Console.WriteLine($"\nProduto {i + 1}:");
 				
 				Console.Write("Nome: ");
-				string nome = Console.ReadLine();
+				string name = Console.ReadLine();
 
 				Console.Write("Preço: ");
-				double preco = double.Parse(Console.ReadLine());
+				double price = double.Parse(Console.ReadLine());
 				
 				Console.Write("Quantidade: ");
-				int quantidade = int.Parse(Console.ReadLine());
+				int quantity = int.Parse(Console.ReadLine());
 
-				produtos.Add(new Produto(nome, preco, quantidade));
+				produtos.Add(new Produto(name, price, quantity));
 			}
 
 			Console.WriteLine("\nLista de Produtos:");
