@@ -1,8 +1,3 @@
-using System;
-using System.Globalization;
-using System.Net.Mail;
-using System.Runtime.CompilerServices;
-
 namespace projeto_C_.exercicio01
 {
     abstract class Exercicio01
